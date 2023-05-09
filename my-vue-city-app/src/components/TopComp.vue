@@ -2,7 +2,7 @@
   <header>
     <ul class="gnb">
       <!-- v-값,i-속성명 -->
-      <li v-for="(v,i) in sdata" v-bind:key="i" v-if="i!='인트로'">
+      <li v-for="(v,i) in this.$store.state.cityData" v-bind:key="i" v-if="i!='인트로'">
         <a href="#" v-on:click="chgData(i)">
           {{ i }}
         </a>
