@@ -64,6 +64,17 @@ const store = new Vuex.Store({
 
         }, //////// chgData 메서드 ////////
 
+        /// 메뉴 데이터 변경 메서드 /////
+        chgMenu(헐,슉){ // 헐 - state변수, 슉 - 전달값
+            헐.cityData = 
+            슉==1?
+            {...헐.myD0,...헐.myD1}:
+            {...헐.myD0,...헐.myD2};
+            console.log("뮤테호출!",슉,헐.cityData);
+
+        }, ////////// chgMenu 메서드 //////////
+
+
     },
     // (3) 백엔관련 코딩 비동기처리 메서드 구역 : 
     // 호출시 dispatch() 사용

@@ -1,7 +1,7 @@
-import Vue from 'vue'
-import App from './App'
+import Vue from 'vue';
+import App from './App';
 // 뷰엑스 스토어 JS 불러오기!
-import store from './store.js'
+import store from './store.js';
 
 
 /* 뷰인스턴스 생성하기! */
